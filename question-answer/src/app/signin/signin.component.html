@@ -1,0 +1,37 @@
+<div class="container">
+    <hr>
+    
+    <div class="row justify-content-sm-center" >
+      <aside class="col-sm-4 ">
+   
+    <div class="card text-white bg-primary">
+    <article class="card-body">
+    <a href="/signup" class="float-right btn btn-info">Sign up</a>
+    <h4 class="card-title mb-4 mt-1">Sign in</h4>
+       <form>
+        <div class="form-group">
+          <label>Your email</label>
+            <input name="" class="form-control" placeholder="Email" type="email" #email>
+        </div> <!-- form-group// -->
+        <div class="form-group">
+         
+          <label>Your password</label>
+            <input class="form-control" placeholder="******" type="password" #password>
+        </div> <!-- form-group// --> 
+        <div class="form-group"> 
+        <div class="checkbox">
+          <label> <input type="checkbox"> Save password </label>
+        </div> <!-- checkbox .// -->
+        </div> <!-- form-group// -->  
+        <div class="form-group">
+            <button (click) = "onSignin(email.value,password.value)" class="btn btn-light btn-block"> Login  </button>
+        </div> <!-- form-group// -->                                                           
+    </form>
+    </article>
+    </div> <!-- card.// -->
+    
+      </aside> <!-- col.// -->
+    
+    </div> <!-- row.// -->
+    
+    </div> 

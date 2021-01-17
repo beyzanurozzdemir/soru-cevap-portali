@@ -1,0 +1,42 @@
+
+<div class="container">
+    <hr>
+    
+    <div class="row justify-content-sm-center" >
+      <aside class="col-sm-4 ">
+   
+    <div class="card text-white bg-dark ">
+    <article class="card-body">
+    <a href="/signin" class="float-right btn btn-warning">Sign in</a>
+    <h4 class="card-title mb-4 mt-1">Sign Up</h4>
+       <form>
+        <div class="form-group">
+          <label>Name And Surname</label>
+            <input required name="" class="form-control" placeholder="Name And Surname" type="text" #fullName>
+        </div> <!-- form-group// -->
+        <div class="form-group">
+          <label>Your email</label>
+            <input  required name="" class="form-control" placeholder="Email" type="email" #emailSignup>
+        </div> <!-- form-group// -->
+        <div class="form-group">
+        
+          <label>Your password</label>
+            <input required class="form-control" placeholder="******" type="password" #passwordSignup>
+        </div> <!-- form-group// --> 
+        <div class="form-group"> 
+        <div class="checkbox">
+         
+        </div> <!-- checkbox .// -->
+        </div> <!-- form-group// -->  
+        <div class="form-group">
+            <button (click) = "onSignup(emailSignup.value,passwordSignup.value,fullName.value)" type="button" class="btn btn-primary btn-block"> Login  </button>
+        </div> <!-- form-group// -->                                                           
+    </form>
+    </article>
+    </div> <!-- card.// -->
+    
+      </aside> <!-- col.// -->
+    
+    </div> <!-- row.// -->
+    
+    </div> 

@@ -1,0 +1,43 @@
+
+<app-navbar></app-navbar>
+
+
+
+<div class="container-fluid">
+ 
+  
+  
+    <h2 class="text-center">Your Status</h2>
+   
+
+      <div class="row ml-2">
+   
+      
+      <pre *ngFor="let ans of answers"> 
+        <div class="col-md-3">
+        <div [ngClass]="ans.isSuccess  ? 'card text-white bg-success' : 'card text-white bg-danger' "   style="width: 18rem;" >
+          <div class="card-header">{{ans.section.sectionName}}</div>
+          <div class="card-body">
+            <h5 class="card-title">{{ans.questionCount}}</h5>
+            <p class="card-text">Correct Answer : {{ans.correctCount}}</p>
+            <p class="card-text">Wrong Answer : {{ans.wrongCount}}</p>
+            <p class="card-text">Success Rate : {{ans.successRate}} %</p>
+
+          </div>
+        </div>
+
+      </div>
+      </pre>
+   
+ 
+</div>
+  
+   
+   
+    
+  
+  </div>
+
+
+
+  
